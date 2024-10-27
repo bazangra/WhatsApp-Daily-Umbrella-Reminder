@@ -1,9 +1,9 @@
 import requests
 from twilio.rest import Client
 
-account_sid = 'ACbbb8fba945900aa7f2a1f4116d1b4ab3'
-auth_token = '3a82e7c3b683c8f2d3bd6f80ad1cc50c'
-api_key = "ba745ec27bb5d154e7ca2bb08e2bc42c"
+account_sid = []
+auth_token = []
+api_key = []
 MY_LAT = 51.952110
 MY_LONG = -3.028390
 
@@ -27,8 +27,8 @@ for each in list2:
 if will_rain:
     client = Client(account_sid, auth_token)
     message = client.messages.create(
-        from_='whatsapp:+14155238886',
+        from_='whatsapp:+[]',
         body='It"s is going to rain today. Remember to bring an ☂️',
-        to='whatsapp:+447711259832'
+        to='whatsapp:+[]'
     )
     print(message.status)
